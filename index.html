@@ -19,15 +19,22 @@
     <header class="header">
         <nav class="nav">
             <a class="logo accent" href="./index.html" alt="Логотип компании" title="">
-                Web<span class="logo--black">Studio</span></a>
-            <ul class="nav__pages list">
+                Web<span class="logo--black">Studio</span>
+            </a>
+            <button type="button" class="nav__menu-button ">
+                <svg class="svg" width="24px" height="24px">
+                    <use href="./img/sprite.svg#menu"></use>
+                    <use href="./img/sprite.svg#cross"></use>
+                </svg>
+            </button>
+            <ul class="nav__pages list visually-hidden">
                 <li class="nav__list">
                     <a href="./index.html" class="nav__link list nav__link--current">Студия</a>
                 </li>
                 <li class="nav__list"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
                 <li class="nav__list"><a href="" class="nav__link">Контакты</a></li>
             </ul>
-            <ul class="nav__contacts list">
+            <ul class="nav__contacts list visually-hidden">
                 <li class="nav__list list ">
                     <a href="" class="nav__link">
                         <div class="nav__icon svg">
@@ -66,7 +73,7 @@
         </section>
         <!-- ---------------------ADVANTAGES------------------ -->
         <section class="advantages">
-            <div class="container">
+            <div class="container section">
                 <h2 class="visually-hidden">Преимущества</h2>
                 <ul class="advantages__list list">
                     <li class="advantages__item radar">
@@ -114,19 +121,19 @@
                 <h2 class="our-work__h2">Чем мы занимаемся</h2>
                 <ul class="our-work__list list">
                     <li class="our-work__item">
-                        <img class="img" src="./img/img1.jpg" alt="разработка для планшетов" width="370">
+                        <img class=src="./img/img1.jpg" alt="разработка для планшетов" width="370">
                         <div class="our-work__explanation">
                             <h3 class="our-work__h3">ДЕСКТОПНЫЕ ПРИЛОЖЕНИЯ</h3>
                         </div>
                     </li>
                     <li class="our-work__item">
-                        <img class="img" src="./img/img2.jpg" alt="мобильная разработка" width="370">
+                        <img class=src="./img/img2.jpg" alt="мобильная разработка" width="370">
                         <div class="our-work__explanation">
                             <h3 class="our-work__h3">МОБИЛЬНЫЕ ПРИЛОЖЕНИЯ</h3>
                         </div>
                     </li>
                     <li class="our-work__item">
-                        <img class="img" src="./img/img3.jpg" alt="графический дизайн" width="370">
+                        <img class=src="./img/img3.jpg" alt="графический дизайн" width="370">
                         <div class="our-work__explanation">
                             <h3 class="our-work__h3">ДИЗАЙНЕРСКИЕ РЕШЕНИЯ</h3>
                         </div>
@@ -141,7 +148,7 @@
                 <h2 class="our-team__h2">Наша команда</h2>
                 <ul class="our-team__list list">
                     <li class="our-team__item">
-                        <img class="img" src="./img/photo1.jpg" alt="член команды" width="270">
+                        <img class="our-team__img" src="./img/photo1.jpg" alt="член команды">
                         <div class="our-team__fio">
                             <h3 class="our-team__h3">Игорь Демьяненко</h3>
                             <p>Product Designer</p>
@@ -186,7 +193,7 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img class="img" src="./img/photo2.jpg" alt="член команды" width="270">
+                        <img class="our-team__img" src="./img/photo2.jpg" alt="член команды">
                         <div class="our-team__fio">
                             <h3 class="our-team__h3">Ольга Репина</h3>
                             <p>Frontend Developer</p>
@@ -231,7 +238,7 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img class="img" src="./img/photo3.jpg" alt="член команды" width="270">
+                        <img class="our-team__img" src="./img/photo3.jpg" alt="член команды">
                         <div class="our-team__fio">
                             <h3 class="our-team__h3">Николай Тарасов</h3>
                             <p>Marketing</p>
@@ -276,7 +283,7 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img class="img" src="./img/photo4.jpg" alt="член команды" width="270">
+                        <img class="our-team__img" src="./img/photo4.jpg" alt="член команды">
                         <div class="our-team__fio">
                             <h3 class="our-team__h3">Михаил Ермаков</h3>
                             <p>UI Designer</p>
@@ -378,7 +385,7 @@
     </main>
     <!-- ----------------------FOOTER---------------------- -->
     <footer>
-        <div class="container footer">
+        <div class="container footer section">
             <address class="address">
                 <a class="logo address-logo" href="./index.html">Web<span class="logo--white">Studio</span></a>
                 <p class="adress--mb9">г. Киев, пр-т Леси Украинки, 26</p>

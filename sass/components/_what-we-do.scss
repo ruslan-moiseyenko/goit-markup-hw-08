@@ -1,4 +1,10 @@
-.out-work {
+.our-work {
+    display: none;
+
+    @media (min-width: 1200px) {
+        display: block;
+    }
+
     margin-bottom: 94px;
 }
 

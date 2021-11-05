@@ -1,21 +1,47 @@
 footer {
     background-color: $footer-bg-color;
-}
 
+    @media screen and (min-width: 480px) {
+        text-align: center;
+    }
+}
 
 .footer {
     display: flex;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    // padding-top: 60px;
+    // padding-bottom: 60px;
+
+
+    @media screen and (min-width: 480px) {
+        flex-direction: column;
+        align-items: center;
+    }
 }
 
 .address {
-    text-align: left;
+
+    @media screen and (min-width: 480px) {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        text-align: left;
+    }
 }
 
 .adress--mb9 {
     display: block;
-    margin-bottom: 9px;
+
+    @media screen and (min-width: 480px) {
+        margin-bottom: 8px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-bottom: 9px;
+
+    }
 
     color: $main-white-color;
     font-weight: 400;
@@ -27,7 +53,6 @@ footer {
 
 .adress--gray {
     color: rgba(255, 255, 255, 0.6);
-    ;
 }
 
 .footer-h2 {
@@ -41,20 +66,37 @@ footer {
     text-transform: uppercase;
 }
 
-
 .social-links {
-    margin-left: 70px;
-    text-align: left;
+
+    @media screen and (min-width: 480px) {
+        margin-top: 60px;
+        margin-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 70px;
+        text-align: left;
+    }
 }
 
 .footer-form {
-    margin-left: 93px;
-    text-align: left;
+
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 93px;
+        text-align: left;
+    }
 }
 
 .footer-form__email {
     height: 50px;
-    width: 358px;
+    width: 450px;
+
+    @media screen and (min-width: 1200px) {
+        width: 358px;
+    }
+
+    margin-bottom: 20px;
     padding-left: 15px;
     padding-right: 15px;
     outline: none;
@@ -68,18 +110,4 @@ footer {
     &:focus-within {
         border-color: $accent-color;
     }
-}
-
-.footer-form__btn {
-    display: inline-flex;
-    align-items: center;
-
-    margin-left: 12px;
-    padding-left: 29px;
-
-    text-align: center;
-}
-
-.footer-form__svg {
-    margin-left: 12px;
 }

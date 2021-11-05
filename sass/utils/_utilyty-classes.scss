@@ -49,8 +49,28 @@ a {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    width: 1200px;
     text-align: center;
+
+    @media screen and (min-width: 480px) {
+        width: 480px;
+    }
+}
+
+
+/* common section */
+
+.section {
+
+    @media screen and (min-width: 480px) {
+        padding-top: 60px;
+        padding-bottom: 60px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        padding-top: 94px;
+        padding-bottom: 94px;
+    }
+
 }
 
 /* common list */
@@ -61,12 +81,6 @@ a {
     padding: 0;
 }
 
-/* common section */
-
-.section {
-    padding-top: 94px;
-    padding-bottom: 94px;
-}
 
 .accent-color {
     color: $accent-color;

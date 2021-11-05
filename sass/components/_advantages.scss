@@ -1,22 +1,4 @@
-.advantages {
-    padding-top: 93px;
-}
-
-.advantages__list {
-    display: flex;
-    text-align: left;
-}
-
-.advantages__item {
-    width: 270px;
-
-    &+& {
-        margin-left: 30px;
-    }
-}
-
 .advantages__icon {
-    width: 270px;
     height: 120px;
     padding: 25px;
     margin-bottom: 30px;
@@ -24,6 +6,11 @@
     text-align: center;
 
     background-color: $ourteam-background-color;
+
+    @media screen and (min-width: 480px) {
+        width: 100%;
+
+    }
 }
 
 .advantages__h3 {
@@ -35,5 +22,13 @@
 
     &+* {
         line-height: 1.71;
+        text-align: left;
+    }
+}
+
+.advantages__item {
+
+    @media screen and (min-width: 480px) {
+        padding-bottom: 30px;
     }
 }
