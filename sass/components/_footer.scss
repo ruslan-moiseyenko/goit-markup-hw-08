@@ -2,14 +2,18 @@ footer {
     background-color: $footer-bg-color;
 
     @media screen and (min-width: 480px) {
+        width: 480px;
         text-align: center;
     }
 }
 
 .footer {
-    display: flex;
+    display: block;
+
+    // display: flex;
     // padding-top: 60px;
     // padding-bottom: 60px;
+
 
 
     @media screen and (min-width: 480px) {

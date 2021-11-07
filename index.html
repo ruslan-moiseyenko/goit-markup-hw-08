@@ -21,43 +21,46 @@
             <a class="logo accent" href="./index.html" alt="Логотип компании" title="">
                 Web<span class="logo--black">Studio</span>
             </a>
-            <button type="button" class="nav__menu-button ">
-                <svg class="svg" width="24px" height="24px">
-                    <use href="./img/sprite.svg#menu"></use>
-                    <use href="./img/sprite.svg#cross"></use>
+            <button type="button" class="nav__menu-button" data-menu-button>
+                <svg class="svg" width="40px" height="40px" aria-label="кнопка меню" aria-expanded="false"
+                    aria-controls="nav_nav-wrapper">
+                    <use href="./img/sprite.svg#menu" class="nav__menu-button--open"></use>
+                    <use href="./img/sprite.svg#cross" class="nav__menu-button--close"></use>
                 </svg>
             </button>
-            <ul class="nav__pages list visually-hidden">
-                <li class="nav__list">
-                    <a href="./index.html" class="nav__link list nav__link--current">Студия</a>
-                </li>
-                <li class="nav__list"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
-                <li class="nav__list"><a href="" class="nav__link">Контакты</a></li>
-            </ul>
-            <ul class="nav__contacts list visually-hidden">
-                <li class="nav__list list ">
-                    <a href="" class="nav__link">
-                        <div class="nav__icon svg">
-                            <svg class="" width="16px" height="12px">
-                                <use href="./img/sprite.svg#envelope"></use>
-                            </svg>
-                        </div>
+            <div class="nav_nav-wrapper" id="nav_nav-wrapper" data-menu>
+                <ul class="nav__pages list">
+                    <li class="nav__list">
+                        <a href="./index.html" class="nav__link list nav__link--current">Студия</a>
+                    </li>
+                    <li class="nav__list"><a href="./portfolio.html" class="nav__link">Портфолио</a></li>
+                    <li class="nav__list"><a href="" class="nav__link">Контакты</a></li>
+                </ul>
+                <ul class="nav__contacts list">
+                    <li class="nav__list list ">
+                        <a href="" class="nav__link">
+                            <div class="nav__icon svg">
+                                <svg class="" width="16px" height="12px">
+                                    <use href="./img/sprite.svg#envelope"></use>
+                                </svg>
+                            </div>
 
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="nav__list list">
-                    <a href="" class="nav__link">
-                        <div class="nav__icon svg">
-                            <svg class="icon-phone" width="10px" height="16px">
-                                <use href="./img/sprite.svg#phone"></use>
-                            </svg>
-                        </div>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="nav__list list">
+                        <a href="" class="nav__link">
+                            <div class="nav__icon svg">
+                                <svg class="icon-phone" width="10px" height="16px">
+                                    <use href="./img/sprite.svg#phone"></use>
+                                </svg>
+                            </div>
 
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </nav>
     </header>
 
@@ -332,8 +335,8 @@
         </section>
         <!-- ---------------------REGULAR CUSTOMERS------------------------ -->
 
-        <section class="regular-customers section">
-            <div class="container">
+        <section class="regular-customers section container">
+            <div class="">
                 <h2 class="regular-customers__h2">Постоянные клиенты</h2>
                 <ul class="regular-customers__list list">
                     <li class="regular-customers__item">
@@ -385,7 +388,7 @@
     </main>
     <!-- ----------------------FOOTER---------------------- -->
     <footer>
-        <div class="container footer section">
+        <div class="container footer section is-hidden">
             <address class="address">
                 <a class="logo address-logo" href="./index.html">Web<span class="logo--white">Studio</span></a>
                 <p class="adress--mb9">г. Киев, пр-т Леси Украинки, 26</p>
@@ -501,6 +504,7 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 
 </html>
