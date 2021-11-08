@@ -49,12 +49,6 @@ a {
   width: 480px;
 }
 
-@media screen and (min-width: 480px) {
-  .container {
-    width: 480px;
-  }
-}
-
 @media screen and (min-width: 768px) {
   .container {
     width: 768px;
@@ -531,6 +525,13 @@ a {
 
 .regular-customers {
   text-align: center;
+  width: 480px;
+}
+
+@media screen and (min-width: 768px) {
+  .regular-customers {
+    width: 768px;
+  }
 }
 
 .regular-customers__h2 {
@@ -575,6 +576,7 @@ a {
 
 .regular-customers__link {
   display: block;
+  width: 210px;
   height: 92px;
   padding-top: 16px;
   padding-bottom: 16px;
@@ -625,18 +627,18 @@ a {
 
 footer {
   background-color: #2F303A;
+  width: 480px;
 }
 
 @media screen and (min-width: 480px) {
   footer {
+    width: 480px;
     text-align: center;
   }
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: block;
 }
 
 @media screen and (min-width: 480px) {
