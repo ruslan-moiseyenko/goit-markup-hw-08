@@ -4,6 +4,7 @@
 
 //filter
 
+
 .filter {
     display: flex;
 
@@ -12,6 +13,11 @@
         flex-wrap: wrap;
         justify-content: flex-start;
         margin-bottom: 25px;
+    }
+
+    @media screen and (min-width: 768px) {
+        flex-wrap: no-wrap;
+        justify-content: center;
     }
 
     @media screen and (min-width: 1200px) {
@@ -69,6 +75,12 @@
 
 // gallery
 
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
 .gallery__link {
     text-decoration: none;
 }
@@ -76,15 +88,21 @@
 .gallery__item {
     position: relative;
 
-    // margin-right: 30px;
     margin-bottom: 30px;
 
-    // height: 404px;
     width: 450px;
     margin-left: auto;
     margin-right: auto;
 
-    @media screen and (min-width:768) {}
+    @media screen and (min-width:768px) {
+        margin-left: 0;
+        margin-right: 0;
+        width: 354px;
+
+        &:nth-child(2n) {
+            margin-left: 30px;
+        }
+    }
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -102,7 +120,7 @@
 
 .gallery__project-information-wrap {
     position: relative;
-    width: 450px;
+    width: 100%;
 
     overflow: hidden;
 }

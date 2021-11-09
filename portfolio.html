@@ -22,49 +22,58 @@
             <a class="logo accent" href="./index.html" alt="Логотип компании" title="">
                 Web<span class="logo--black">Studio</span>
             </a>
-            <button type="button" class="nav__menu-button ">
-                <svg class="svg" width="24px" height="24px">
-                    <use href="./img/sprite.svg#menu"></use>
-                    <use href="./img/sprite.svg#cross"></use>
+            <button type="button" class="nav__menu-button" data-menu-button>
+                <svg class="svg" width="40px" height="40px" aria-label="кнопка меню" aria-expanded="false"
+                    aria-controls="nav_nav-wrapper">
+                    <use href="./img/sprite.svg#menu" class="nav__menu-button--open"></use>
+                    <use href="./img/sprite.svg#cross" class="nav__menu-button--close"></use>
                 </svg>
             </button>
-            <ul class="nav__pages list visually-hidden">
-                <li class="nav__list">
-                    <a href="./index.html" class="nav__link list ">Студия</a>
-                </li>
-                <li class="nav__list"><a href="./portfolio.html" class="nav__link nav__link--current">Портфолио</a></li>
-                <li class="nav__list"><a href="" class="nav__link">Контакты</a></li>
-            </ul>
-            <ul class="nav__contacts list visually-hidden">
-                <li class="nav__list list ">
-                    <a href="" class="nav__link">
-                        <div class="nav__icon svg">
-                            <svg class="" width="16px" height="12px">
-                                <use href="./img/sprite.svg#envelope"></use>
-                            </svg>
-                        </div>
-
-                        info@devstudio.com
-                    </a>
-                </li>
-                <li class="nav__list list">
-                    <a href="" class="nav__link">
-                        <div class="nav__icon svg">
-                            <svg class="icon-phone" width="10px" height="16px">
-                                <use href="./img/sprite.svg#phone"></use>
-                            </svg>
-                        </div>
-
-                        +38 096 111 11 11
-                    </a>
-                </li>
-            </ul>
+            <div class="nav_nav-wrapper" id="nav_nav-wrapper" data-menu>
+                <ul class="nav__pages list">
+                    <li class="nav__list-pages">
+                        <a href="./index.html" class="nav__link list">Студия</a>
+                    </li>
+                    <li class="nav__list-pages"><a href="./portfolio.html"
+                            class="nav__link nav__link--current">Портфолио</a></li>
+                    <li class="nav__list-pages"><a href="" class="nav__link">Контакты</a></li>
+                </ul>
+                <ul class="nav__contacts list">
+                    <li class="nav__list-contacts list ">
+                        <a href="" class="nav__link nav__list--email-480">
+                            <div class="nav__icon svg">
+                                <svg class="" width="16px" height="12px">
+                                    <use href="./img/sprite.svg#envelope"></use>
+                                </svg>
+                            </div>
+                            info@devstudio.com
+                        </a>
+                    </li>
+                    <li class="nav__list-contacts list">
+                        <a href="" class="nav__link  nav__list--phone-480">
+                            <div class="nav__icon svg">
+                                <svg class="icon-phone" width="10px" height="16px">
+                                    <use href="./img/sprite.svg#phone"></use>
+                                </svg>
+                            </div>
+                            +38 096 111 11 11
+                        </a>
+                    </li>
+                </ul>
+                <ul class="nav__social-networks">
+                    <li><a href="" class="nav__link-social">Instagram <span class="nav__span-border">|</span> </a></li>
+                    <li><a href="" class="nav__link-social">Twitter <span class="nav__span-border">|</span> </a></li>
+                    <li><a href="" class="nav__link-social">Facebook <span class="nav__span-border">|</span> </a></li>
+                    <li><a href="" class="nav__link-social">Linkedin</a></li>
+                </ul>
+            </div>
         </nav>
     </header>
 
     <main>
         <section class="portfolio section">
             <div class="container ">
+                <!-- -------------------------------FILTER---------------- -->
                 <ul class="filter list">
                     <li class="filter__item"><button type="button" class="filter__btn">Все</button> </li>
                     <li class="filter__item"><button type="button" class="filter__btn">Веб-сайты</button></li>
@@ -72,6 +81,7 @@
                     <li class="filter__item"><button type="button" class="filter__btn">Дизайн</button></li>
                     <li class="filter__item"><button type="button" class="filter__btn">Маркетинг</button></li>
                 </ul>
+                <!-- -------------------------------GALLERY---------------- -->
                 <ul class="list gallery">
                     <li class="gallery__item">
                         <a href="" class="gallery__link link">
@@ -215,12 +225,12 @@
     </main>
     <!-- ------------------FOOTER----------------------- -->
     <footer>
-        <div class="container footer">
+        <div class="footer container section">
             <address class="address">
                 <a class="logo address-logo" href="./index.html">Web<span class="logo--white">Studio</span></a>
                 <p class="adress--mb9">г. Киев, пр-т Леси Украинки, 26</p>
-                <a href="" class="adress--mb9">info@example.com</a>
-                <a href="" class="adress--mb9">+38 099 111 11 11</a>
+                <a href="" class="adress--mb9 adress--gray">info@example.com</a>
+                <a href="" class="adress--mb9 adress--gray">+38 099 111 11 11</a>
             </address>
             <div class="social-links">
                 <h2 class="footer-h2">ПРИСОЕДИНЯЙТЕСЬ</h2>
@@ -231,7 +241,6 @@
                             <svg class="svg" width="44px" height="44px">
                                 <use href="./img/sprite.svg#instagram"></use>
                             </svg>
-
                         </a>
                     </li>
                     <li class="social-networks__item social-networks__item--dark">

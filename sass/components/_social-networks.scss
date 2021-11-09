@@ -7,6 +7,10 @@
 
     list-style-type: none;
 
+    @media screen and (max-width: 767px) {
+        justify-content: center;
+    }
+
 }
 
 .social-networks__item {
