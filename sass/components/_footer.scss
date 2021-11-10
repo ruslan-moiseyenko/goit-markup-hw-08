@@ -34,23 +34,23 @@ footer {
     @media screen and (min-width: 480px) {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        // align-items: center;
     }
 
     @media screen and (min-width: 768px) {
-        text-align: center;
         margin-right: 165px;
-        // align-items: left;
-        // width: 50%;
+        align-items: left;
     }
 
     @media screen and (min-width: 1200px) {
         text-align: left;
+        margin-right: 0;
+        align-items: left;
     }
 }
 
 .adress--mb9 {
-    display: block;
+    // display: block;
 
     @media screen and (min-width: 480px) {
         margin-bottom: 8px;
@@ -58,6 +58,8 @@ footer {
 
     @media screen and (min-width: 1200px) {
         margin-bottom: 9px;
+        // display: flex;
+        // align-items: left;
 
     }
 
@@ -98,6 +100,7 @@ footer {
 
     @media screen and (min-width: 1200px) {
         margin-left: 70px;
+        margin-top: 12px;
 
         text-align: left;
 
@@ -114,6 +117,7 @@ footer {
 
     @media screen and (min-width: 1200px) {
         margin-left: 93px;
+        margin-top: 12px;
         text-align: left;
     }
 }
@@ -124,6 +128,11 @@ footer {
         flex-direction: column;
         align-items: center;
     }
+
+    @media screen and (min-width: 1200px) {
+        flex-direction: row;
+        height: 100%;
+    }
 }
 
 .footer-form__email {
@@ -132,6 +141,8 @@ footer {
 
     @media screen and (min-width: 1200px) {
         width: 358px;
+        margin-bottom: 0;
+        margin-right: 12px;
     }
 
     margin-bottom: 20px;

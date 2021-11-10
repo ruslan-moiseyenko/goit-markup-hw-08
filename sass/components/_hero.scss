@@ -23,6 +23,11 @@
 
         background-size: auto 400px;
     }
+
+    @media screen and (min-width: 1200px) {
+
+        background-size: 100% auto;
+    }
 }
 
 
@@ -37,6 +42,12 @@
     @media screen and (min-width:480px) {
         font-size: 26px;
         line-height: 1.61;
+
+    }
+
+    @media screen and (min-width:1200px) {
+        font-size: 44px;
+        line-height: 1.36;
 
     }
 
