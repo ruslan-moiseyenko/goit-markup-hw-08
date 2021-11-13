@@ -12,11 +12,20 @@
 <body>
 
     <div class="gallery">
-        <pictures>
-            <source media="(min-width: 150px)" srcset="./img/portfolio1_480.jpg 1x, ./img/portfolio1_480@2x.jpg 2x">
+        <picture>
+            <source srcset="./img/portfolio1_480.jpg 1x, ./img/portfolio1_480@2x.jpg 2x">
             <source srcset="./img/portfolio1_768.jpg 1x, ./img/portfolio1_4768@2x.jpg 2x">
-            <img src="./img/portfolio1_1200.jpg" srcset="./img/portfolio1_1200@2x.jpg 2x">
-        </pictures>
+            <img src="./img/portfolio1_1200.jpg" alt="">
+        </picture>
+
+
+        <picture>
+            <source media="(max-width: 767px)" srcset="./img/photo1_480@2x.jpg ">
+            <source media="(min-width: 768px)" srcset="./img/photo1_768.jpg 1x, ./img/photo1_768@2x.jpg 2x" >
+            <source media="(min-width: 1200px)" srcset="./img/photo1_1200.jpg 1x, ./img/photo1_1200@2x.jpg 2x" >
+            <img src="./img/photo1_480.jpg" class="our-team__img" alt="член команды">
+        </picture>
+
     </div>
 
 </body>
