@@ -8,20 +8,16 @@ body {
     font-size: 12px;
     font-weight: 400;
     letter-spacing: 0.03em;
-    width: 480px;
+    min-width: 480px;
     margin-left: auto;
     margin-right: auto;
 
     @media screen and (min-width: 768px) {
-        width: 768px;
         margin-left: auto;
         margin-right: auto;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1600px;
-        margin-left: auto;
-        margin-right: auto;
         font-size: 14px;
     }
 }
@@ -66,20 +62,25 @@ a {
     margin-top: 0;
     margin-bottom: 0;
     text-align: center;
-    width: 480px;
-    // overflow-x: hidden;
 
-    // @media screen and (min-width: 480px) {
-    //     width: 480px;
-    // }
+}
+
+// responsive container
+
+.responsive-container {
+    margin-right: auto;
+    margin-left: auto;
+
+    width: 450px;
 
     @media screen and (min-width: 768px) {
-        width: 768px;
+        width: 738px;
     }
 
     @media screen and (min-width: 1200px) {
-        width: 1200px;
+        width: 1170px;
     }
+
 }
 
 
