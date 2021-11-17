@@ -8,9 +8,8 @@
     @media (min-width: 1200px) {
         display: block;
         margin-top: 0;
-        margin-bottom: 94px;
+        padding-bottom: 94px;
     }
-    
 }
 
 .our-work__h2 {
@@ -29,7 +28,7 @@
 .our-work__item {
     position: relative;
 
-    &+& {
+    & + & {
         margin-left: 30px;
     }
 }

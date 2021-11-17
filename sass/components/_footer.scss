@@ -13,8 +13,6 @@ footer {
     // padding-top: 60px;
     // padding-bottom: 60px;
 
-
-
     @media screen and (min-width: 480px) {
         // flex-direction: column;
         // align-items: center;
@@ -24,13 +22,10 @@ footer {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        // flex-direction: row;
-        // align-items: center;
     }
 }
 
 .address {
-
     @media screen and (min-width: 480px) {
         display: flex;
         flex-direction: column;
@@ -60,7 +55,6 @@ footer {
         margin-bottom: 9px;
         // display: flex;
         // align-items: left;
-
     }
 
     color: $main-white-color;
@@ -87,7 +81,6 @@ footer {
 }
 
 .social-links {
-
     @media screen and (min-width: 480px) {
         margin-top: 60px;
         margin-bottom: 60px;
@@ -103,12 +96,10 @@ footer {
         margin-top: 12px;
 
         text-align: left;
-
     }
 }
 
 .footer-form {
-
     @media screen and (min-width: 768px) {
         display: flex;
         flex-direction: column;

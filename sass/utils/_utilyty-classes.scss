@@ -1,6 +1,5 @@
 // here will be presets and utility classes
 
-
 body {
     color: $primary-text-color;
     background-color: $main-white-color;
@@ -52,7 +51,6 @@ a {
     color: inherit;
 }
 
-
 /* -------------general classes------------------ */
 /* common container */
 .container {
@@ -61,33 +59,30 @@ a {
     margin-right: auto;
     margin-top: 0;
     margin-bottom: 0;
-    text-align: center;
+    // text-align: center;
 
+    width: 480px;
+
+    @media screen and (min-width: 768px) {
+        width: 768px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1200px;
+    }
 }
 
 // responsive container
 
-.responsive-container {
-    margin-right: auto;
-    margin-left: auto;
+// .responsive-container {
+//     margin-right: auto;
+//     margin-left: auto;
 
-    width: 450px;
-
-    @media screen and (min-width: 768px) {
-        width: 738px;
-    }
-
-    @media screen and (min-width: 1200px) {
-        width: 1170px;
-    }
-
-}
-
+// }
 
 /* common section */
 
 .section {
-
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -95,7 +90,6 @@ a {
         padding-top: 94px;
         padding-bottom: 94px;
     }
-
 }
 
 /* common list */
@@ -105,7 +99,6 @@ a {
     margin: 0;
     padding: 0;
 }
-
 
 .accent-color {
     color: $accent-color;
@@ -145,8 +138,6 @@ a {
     border-radius: 4px;
     border: 1px solid $accent-color;
 
-
-
     font-size: 16px;
     line-height: 1.88;
     font-weight: 600;
@@ -158,6 +149,6 @@ a {
 
     &:hover,
     &:focus {
-        background-color: #188CE8;
+        background-color: #188ce8;
     }
 }

@@ -61,24 +61,18 @@ a {
   margin-right: auto;
   margin-top: 0;
   margin-bottom: 0;
-  text-align: center;
-}
-
-.responsive-container {
-  margin-right: auto;
-  margin-left: auto;
-  width: 450px;
+  width: 480px;
 }
 
 @media screen and (min-width: 768px) {
-  .responsive-container {
-    width: 738px;
+  .container {
+    width: 768px;
   }
 }
 
 @media screen and (min-width: 1200px) {
-  .responsive-container {
-    width: 1170px;
+  .container {
+    width: 1200px;
   }
 }
 
@@ -147,7 +141,7 @@ a {
 }
 
 .btn:hover, .btn:focus {
-  background-color: #188CE8;
+  background-color: #188ce8;
 }
 
 .social-networks {
@@ -297,7 +291,6 @@ a {
 @media screen and (min-width: 768px) {
   .nav_nav-wrapper {
     display: flex;
-    flex-direction: column;
     width: 100%;
   }
 }
@@ -671,7 +664,7 @@ a {
   .our-work {
     display: block;
     margin-top: 0;
-    margin-bottom: 94px;
+    padding-bottom: 94px;
   }
 }
 
@@ -816,9 +809,16 @@ a {
 }
 
 .regular-customers__h2 {
-  font-size: 36px;
+  font-size: 28px;
   line-height: 1.16;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
+}
+
+@media screen and (min-width: 1200px) {
+  .regular-customers__h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+  }
 }
 
 .regular-customers__list {
@@ -837,7 +837,7 @@ a {
   margin-bottom: 30px;
 }
 
-.regular-customers__item:nth-last-child(-n+2) {
+.regular-customers__item:nth-last-child(-n + 2) {
   margin-bottom: 0;
 }
 
@@ -845,7 +845,7 @@ a {
   .regular-customers__item {
     margin-bottom: 30px;
   }
-  .regular-customers__item:nth-last-child(-n+3) {
+  .regular-customers__item:nth-last-child(-n + 3) {
     margin-bottom: 0;
   }
 }
@@ -1234,7 +1234,7 @@ footer {
 }
 
 .portfolio {
-  border-top: 1px solid #ECECEC;
+  border-top: 1px solid #ececec;
 }
 
 .filter {
@@ -1289,6 +1289,12 @@ footer {
   margin-bottom: 15px;
 }
 
+@media screen and (min-width: 768px) {
+  .filter__item {
+    margin-bottom: 0;
+  }
+}
+
 @media screen and (min-width: 1200px) {
   .filter__item + .filter__item {
     margin-left: 8px;
@@ -1331,6 +1337,9 @@ footer {
   }
   .gallery__item:nth-child(3n + 1) {
     margin-left: 0;
+  }
+  .gallery__item:nth-last-child(-n + 3) {
+    margin-bottom: 0;
   }
 }
 
@@ -1378,10 +1387,10 @@ footer {
 
 .gallery__project-info {
   padding: 20px 24px;
-  border-left: 1px solid #EEEEEE;
+  border-left: 1px solid #eeeeee;
   text-align: left;
-  border-right: 1px solid #EEEEEE;
-  border-bottom: 1px solid #EEEEEE;
+  border-right: 1px solid #eeeeee;
+  border-bottom: 1px solid #eeeeee;
 }
 
 .gallery__h2 {
