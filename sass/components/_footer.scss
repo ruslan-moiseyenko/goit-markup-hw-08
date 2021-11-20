@@ -6,8 +6,8 @@ footer {
 
 .footer {
     display: block;
-    margin-left: auto;
-    margin-right: auto;
+    // margin-left: auto;
+    // margin-right: auto;
     padding-top: 60px;
     padding-bottom: 60px;
 
@@ -85,13 +85,13 @@ footer {
 
 .social-links {
     @media screen and (min-width: 480px) {
-        margin-top: 60px;
+        margin-top: 52px;
         margin-bottom: 60px;
     }
 
     @media screen and (min-width: 768px) {
         margin-top: 5px;
-        // margin-bottom: 102px;
+        margin-bottom: 60px;
     }
 
     @media screen and (min-width: 1200px) {
@@ -125,6 +125,7 @@ footer {
 
     @media screen and (min-width: 1200px) {
         flex-direction: row;
+        align-items: flex-start;
         height: 100%;
     }
 }
